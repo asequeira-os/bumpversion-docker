@@ -1,0 +1,12 @@
+version: '3.5'
+
+services:
+  bumpversion:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    image: aas-bumpversion
+    networks:
+      - bumpversion
+networks:
+  bumpversion:
